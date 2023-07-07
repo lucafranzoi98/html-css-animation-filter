@@ -145,7 +145,8 @@
     width: 60px;
     height: 20px;
     transition-duration: 1s;
-
+    animation-duration: 2s;
+    animation-timing-function: linear;
 }
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
@@ -155,6 +156,8 @@
     width: 60px;
     height: 20px;
     transition-duration: 1s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
 }
 
 .ex-12-button:hover .ex-12-top-white{
@@ -163,4 +166,30 @@
 
 .ex-12-button:hover .ex-12-bottom-white{
     right: calc(100% - 60px);
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: top-rotate;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-name: bottom-rotate;
+}
+
+@keyframes top-rotate{
+    0%{left: 10%; top: -10px;}
+    25%{left: calc(100% - 30px); top: -10px;}
+    50%{left: calc(100% - 30px); top: calc(100% - 10px);}
+    75%{left: -30px; top: calc(100% - 10px);}
+    95%{left: -30px; top: -10px;}
+    100%{left: 10%; top: -10px;}
+}
+
+@keyframes bottom-rotate{
+    0%{right: 20%; bottom: -10px;}
+    25%{right: calc(100% - 30px); bottom: -10px;}
+    50%{right: calc(100% - 30px); bottom: calc(100% - 10px);}
+    75%{right: -35px; bottom: calc(100% - 10px);}
+    95%{right: -35px; bottom: -10px;}
+    100%{right: 10%; bottom: -10px;}
 }
