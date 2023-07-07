@@ -67,7 +67,12 @@
 }
 
 .ex-7-img{
+    transition-duration: 1s;
+}
 
+.ex-7-img:hover{
+    filter: grayscale(100%) sepia(50%);
+    
 }
 
 .ex-8-img{
