@@ -35,7 +35,13 @@
     width: 100px;
     height: 100px;
     background: red;
+    transition-duration: 2s;
 }
+
+.ex-4-square:hover{
+    filter: opacity(0%);
+}
+
 .ex-5-square {
     margin: 20px;
     width: 60px;
